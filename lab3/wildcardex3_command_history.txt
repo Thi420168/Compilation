@@ -1,0 +1,317 @@
+    1  sudo apt-get update
+    2  sudo apt-get upgrade -y
+    3  lsb_release -a
+    4  ls
+    5  ls -l
+    6  ls -a
+    7  whoami
+    8  pwd
+    9  history
+   10  history | tail -n 5
+   11  echo $HISTSIZE
+   12  echo $USER
+   13  echo $PATH
+   14  man ls
+   15  echo "Hello"; echo "World"
+   16  mkdir newfolder && cd newfolder
+   17  cd unknownfolder || echo "Folder not found"
+   18  mkdir -p ~/LabFiles
+   19  cd ~/LabFiles
+   20  touch doc1.txt doc2.txt
+   21  ls -l
+   22  whoami
+   23  pwd
+   24  history | tail -n 5
+   25  echo $HISTSIZE
+   26  echo $PATH
+   27  echo "USER=$USER"
+   28  echo "HOME=$HOME"
+   29  echo "SHELL=$SHELL"
+   30  echo "PATH=$PATH"
+   31  echo "LANG=$LANG"
+   32  sudo apt-get update
+   33  sudo apt-get install gcc -y
+   34  gcc --version
+   35  apt list -a python3
+   36  sudo apt-get install python3.10 -y
+   37  python3.10 --version
+   38  sudo apt-get remove nano -y
+   39  sudo apt-get purge nano -y
+   40  nano --version 2>/dev/null || echo "nano not installed"
+   41  ssh gic-oun-rithi@172.23.144.52
+   42  ssh gic-oun-rithi@174.23.144.52
+   43  ssh gic-ouun-rithi@172.23.144.52
+   44  ssh gic-oun-rithi@192.168.22.122
+   45  mkdir lab2
+   46  cd lab2
+   47  mkdir ex1
+   48  cdex1
+   49  cd ex1
+   50  mkdir etc
+   51  cd etc
+   52  mkdir network
+   53  cd network
+   54  touch interfaces
+   55  cd ..
+   56  mkdir systemd
+   57  cd systemd
+   58  touch resolved.conf
+   59  mkdir system
+   60  touch system.conf
+   61  mkdir user
+   62  touch user.conf
+   63  cd ..
+   64  mkdir udev
+   65  cd udev
+   66  mkdir rules.d
+   67  touch udev.conf
+   68  cd ..
+   69  touch ex1_command_history.txt
+   70  mkdir home
+   71  cd home
+   72  mkdir lost+found
+   73  mkdir user
+   74  cd user
+   75  mkdir Documents
+   76  cd ../..
+   77  toouch result1.txt
+   78  touch result1.txt
+   79  cd ..
+   80  mkdir ex2
+   81  cd ex2
+   82  touch ex2_command_history.txt
+   83  cd ..
+   84  tree
+   85  sudo apt install tree
+   86  tree
+   87  ssh gic-oun-rithi@192.168.21.87
+   88  mkdir lab3
+   89  cd lab3
+   90  mkdir CopyingFolder
+   91  cd CopyingFolder
+   92  touch copied.txt
+   93  cp copied.txt ~/Documents/
+   94  cd ..
+   95  mkdir Documents
+   96  cd CopyingFolder
+   97  cp copied.txt ~/Documents/
+   98  cp * copied.txt / Documents
+   99  cd ..
+  100  cd Documents
+  101  cp copied.txt ~/Documents/
+  102  cd ..
+  103  cd CopyingFolder
+  104  ls
+  105  cp copied.txt /Documents
+  106  cp copied.txt ~/Documents/
+  107  cd ..
+  108  ls
+  109  cd CopyingFolder
+  110  cd copied.txt
+  111  ls -l ~ | grep Documents
+  112  -rw-r--r-- 1 rithi rithi 0 Oct 30 12:00 Documents
+  113  rm ~/Documents
+  114  clear
+  115  tree
+  116  cd ..
+  117  tree
+  118  mkdir Desktop
+  119  tree
+  120  cp ~/lab3/CopyingFolder/copied.txt ~/lab3/Documents/
+  121  tree
+  122  cd CopyingFolder
+  123  touch { one,two,three,four,five}
+  124  tree
+  125  rm{ one,two,three,four,five}
+  126  tree
+  127  rm one,two,three,four,five}
+  128  tree
+  129  rm {
+  130  touch {one,two,three,four,five}.txt
+  131  tree
+  132  cd ..
+  133  cd Documents
+  134  cp *.txt/CopyingFolder
+  135  cpp --help
+  136  cd ..
+  137  cd CopyingFolder
+  138  cp *.txt ~/Desktop/
+  139  cd ..
+  140  tree
+  141  cp ~/lab3/CopyingFolder/*.txt ~/lab3/Desktop/
+  142  tree
+  143  cd Desktop
+  144  rm copied.txt
+  145  tree
+  146  cp ~/lab3/CopyingFolder/*.txt ~/lab3/Documents/
+  147  cd ..
+  148  tree
+  149  cd Documents
+  150  touch {one_document,two_document,three_document,four_document,five_document}.txt
+  151  tree
+  152  echo 1 > one_document.txt
+  153  echo 2 > two_document.txt
+  154  echo 3 > three_document.txt
+  155  echo 4 > four_document.txt
+  156  echo 5 > five_document.txt
+  157  tree
+  158  cat one_document.txt
+  159  rm one_document.txt document_un
+  160  mv one_document.txt document_un
+  161  mv one_document.txt document_un.txt
+  162  mv two_document.txt document_deux.txt
+  163  mv three_document.txt document_trois.txt
+  164  mv four_document.txt document_quatre.txt
+  165  mv five_document.txt document_cinq.txt
+  166  mv two_document document_deux
+  167  tree
+  168  echo 2 > two_document.txt
+  169  echo 1 > one_document.txt
+  170  mv two_document document_deux
+  171  mv one_document.txt document_un.txt
+  172  mv two_document.txt document_deux.txt
+  173  tree
+  174  cd ..
+  175  mkdir MoveFolder
+  176  cd Documents
+  177  cd ..
+  178  cd lab2
+  179  cd ..
+  180  cd lab1
+  181  cd lb3
+  182  cd lab3
+  183  cd ..
+  184  cd lab2
+  185  tree
+  186  cd ..
+  187  ssh gic oun-rithi@192.168.27.2
+  188  cd lab3
+  189  tree
+  190  whatis clear
+  191  history
+  192  kkh
+  193  clear
+  194  whatis ls
+  195  whatis cd
+  196  whatis mkdir
+  197  whatis touch
+  198  help history
+  199  -- help
+  200  --help
+  201  history --help
+  202  man clear
+  203  man hisstory
+  204  man history
+  205  clear
+  206  pwd
+  207  cd /home
+  208  cd /rithi
+  209  cd rith/
+  210  cd rithi/
+  211  pwd
+  212  cd ~
+  213  pwd
+  214  cd ../../var
+  215  pwd
+  216  cd -
+  217  ls .
+  218  ls -a
+  219  ls -l
+  220  ls -a -l
+  221  ls -a
+  222  ls -a -l
+  223  ls -l
+  224  ls -l -a
+  225  ls /var
+  226  ll
+  227  mkdir /myfolder
+  228  sudo mkdir /myfolder
+  229  ls
+  230  ls /
+  231  ls
+  232  cd LabFiles
+  233  ls
+  234  ll
+  235  cd ..
+  236  cd lab3
+  237  tree
+  238  mkdir ~/Desktop/FrenchFolder
+  239  cd Desktop
+  240  FrenchFolder
+  241  mkdir FrenchFolder
+  242  tree
+  243  ~/lab3/Documents
+  244  mv ~/lab3/Documents/document_* ~/lab3/Desktop/FrenchFolder/
+  245  ls
+  246  ls ~/lab3/Desktop/FrenchFolder
+  247  cd ..
+  248  tree ~/lab3 > ~/lab3/tree_structure_before_remove.txt
+  249  ~/lab3/tree_structure_before_remove.txt
+  250  cat ~/lab3/tree_structure_before_remove.txt
+  251  ~/lab3/Desktop/FrenchFolde
+  252  cd Desktop
+  253  cd FrenchFolder
+  254  rm ~/lab3/Desktop/FrenchFolder/document_deux.txt
+  255  ls ~/lab3/Desktop/FrenchFolder
+  256  cd ~
+  257  lab3
+  258  cd lab3
+  259  cd ..
+  260  cd ~/lab3/Documents
+  261  mkdir EmptyFolder
+  262  ls
+  263  cd EmptyFolder
+  264  touch deletfile.txt
+  265  mkdir DeletFolder
+  266  rm -r DeletFolder
+  267  ls
+  268  cd ..
+  269  rm -r EmptyFolder
+  270  ls
+  271  rm ~/lab3/Desktop/FrenchFolder/*.txt
+  272  ls ~/lab3/Desktop/FrenchFolder
+  273  cd ..
+  274  tree ~/lab3 > ~/lab3/tree_structure_after_remove.txt
+  275  cat ~/lab3/tree_structure_after_remove.txt
+  276  history > ~/lab3/wildcardex1_command_history.txt
+  277  ~/lab3/wildcardex1_command_history.txt
+  278  cd ..
+  279  ~/lab3/wildcardex1_command_history.txt
+  280  cat ~/lab3/wildcardex1_command_history.txt
+  281  cat ~/lab3/tree_structure_after_remove.txt
+  282  cd ~/lab3
+  283  mkdir wildcard_lab
+  284  cd wildcard_lab
+  285  touch a.txt b.txt ab.txt abc.txt xyz.log data.csv
+  286  ls
+  287  ls *.txt
+  288  ls *.log
+  289  ls ?.txt
+  290  cd ..
+  291  mkdir backup
+  292  cd backup
+  293  cp *.txt ~/lab3/backup/
+  294  cd ..
+  295  cd wildcard_lab
+  296  cp *.txt ~/lab3/backup/
+  297  cp ???.txt ~/lab3/backup/
+  298  ls ~/lab3/backup
+  299  rm ?.txt
+  300  rm ~/lab3/backup/*
+  301  touch file{1..3}.txt
+  302  touch [123]file.txt
+  303  ls
+  304  rm '[123]file.txt'
+  305  touch [123]file.txt
+  306  ls
+  307  rm '[123]file.txt
+rm '[123]file'.txt
+
+cd ..
+  308  rm '[123]file.txt'
+  309  touch [1,2,3]file.txt
+  310  ls
+  311  rm '[1,2,3]file.txt'
+  312  touch {1,2,3}file.txt
+  313  ls
+  314  history > ~/lab3/wildcardex3_command_history.txt
